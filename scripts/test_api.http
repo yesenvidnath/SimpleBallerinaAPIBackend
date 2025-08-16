@@ -1,0 +1,35 @@
+### Health Check
+GET http://localhost:8080/health
+###
+GET http://localhost:8080/users
+###
+GET http://localhost:8080/users/1
+###
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+    "UserName": "newuser",
+    "Email": "sample@gmail.com",
+    "Passwrod": "newpassword123"
+}
+###
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+    "UserName": "admin",
+    "Email": "sample@gmail.com",
+    "Passwrod": "admin123"
+}
+###
+PUT http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+    "UserName": "updated_admin",
+    "Email": "sample@gmail.com",
+    "Passwrod": "newpassword123"
+}
+###
+DELETE http://localhost:8080/users/3

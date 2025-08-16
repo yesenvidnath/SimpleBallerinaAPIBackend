@@ -1,0 +1,18 @@
+[package]
+org = "myorg"
+name = "mysql_backend"
+version = "0.1.0"
+distribution = "2201.8.0"
+
+[build-options]
+observabilityIncluded = true
+
+[[dependency]]
+org = "ballerinax"
+name = "mysql"
+version = "1.11.0"
+
+[[dependency]]
+org = "ballerinax"
+name = "mysql.driver"
+version = "1.4.0"
